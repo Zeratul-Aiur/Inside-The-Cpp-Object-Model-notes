@@ -47,10 +47,10 @@ float x, y, z;
 
 ## 关键词所带来的差异 A Keyword Distinction
 
-什么时候该使用`struct`替换`class`？当更能明确表示类型含义的时候。例如单纯表示数据集合体，没有`private data`，也没有`member function`的时候。
+什么时候该使用`struct`替换`class`？当更能明确表示类型含义的时候。例如单纯表示数据集合体，没有`private data`，也没有`member function`的时候；或者只是想利用`struct`默认的`public`接口声明（或者说主张使用`struct`表示类中成员变量和成员函数都是`public`的）。
 
 ## 对象的差异 An Object Distinction
 
-一个指针或者引用之所以支持多态，是因为它们并不引发内存中任何“与类型有关的内存委托操作”，会受到改变的，只有它们所指向的内存的“大小和内存解释方式”而已。
+一个指针或者引用之所以支持多态，是因为它们并不引发内存中任**与类型有关的内存委托操作**，会受到改变的，只有它们所指向的内存的**大小和内存解释方式**而已。
 
 当一个`base class object`被直接初始化为一个`derived class object`时，`derived object`就会被切割以塞入较小的`base type`内存中，`derived type`将没有留下任何痕迹。多态于是不再呈现。
