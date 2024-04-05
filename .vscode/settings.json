@@ -5,6 +5,7 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "cSpell.words": [
+        "Memberwise",
         "struct"
     ],
     "workbench.iconTheme": "vscode-icons",
