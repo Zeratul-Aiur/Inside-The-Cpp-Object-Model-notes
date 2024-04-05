@@ -30,3 +30,24 @@ public:
 如果`Bar`包含多个`member class object`，那么会以`member objects`在`class`中的声明顺序来依次调用。
 
 再次注意，**被合成的`default constructor`只满足编译器的需要，而不是程序的需要。**
+
+## “ 带有 Default Constructor ” 的 Base Class
+
+同样，如果一个没有任何`constructors`的`class`派生自一个带有`default constructor`的`base class`，那么这个派生类的`default constructor`会被视为`nontrivial`，并因此需要被合成出来。
+
+## “ 带有一个 Virtual Function ” 的 Class
+
+有两种情况:
+
+1. `class`声明或继承一个`virtual function`。
+2. `class`派生自一个继承串链，其中有一个或多个`virtual base classes`。
+
+编译器也会合成出`default constructor`，以便正确的初始化每一个`class object`的虚函数指针。
+
+## Default Memberwise Initialization
+
+## Bitwise Copy Semantics 位逐次拷贝
+
+`Default constructors`和`copy constructors`只在必要的时候才由编译器生产出来。
+
+因此在没有这两者的情况下，对于就是通过`Bitwise Copy`来搞定的。也就是将源类中的成员变量的每一位都逐次复制到目标类中。
