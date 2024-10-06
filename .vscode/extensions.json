@@ -8,7 +8,6 @@
         "shardulm94.trailing-spaces",
         "streetsidesoftware.code-spell-checker",
         "vscode-icons-team.vscode-icons",
-        "DavidAnson.vscode-markdownlint",
         "shd101wyy.markdown-preview-enhanced",
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
