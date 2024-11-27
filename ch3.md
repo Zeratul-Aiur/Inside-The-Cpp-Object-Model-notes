@@ -1,6 +1,8 @@
 # Data 语意学 The Semantics of Data
 
 - 空类的对象会有一个 bit 的大小，使它可以在内存中被分配一个独一无二的地址。
+- 非静态成员变量在类对象中的排列顺序和其被声明的顺序一致。
+- 编译器会在 name-mangling 来解决命名冲突的问题。
 
 ## 3.2 Data Member 的布局 Data Member Layout
 
