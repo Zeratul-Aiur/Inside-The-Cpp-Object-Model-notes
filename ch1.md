@@ -1,5 +1,7 @@
 # 关于对象 Object Lessons
 
+- 类对象大小的影响因素：非静态成员变量，支持虚函数所产生的大小，继承，因内存对齐填补上的大小。
+
 ## 加上封装后的布局成本 Layout Costs for Adding Encapsulation
 
 - `Zero-cost abstraction`最关键的地方是`Don't pay for things you don't use`。它在于可以为你提供代码的抽象，而不加额外的负担。
@@ -52,3 +54,4 @@
   - 非静态成员所占的大小。
   - 由于内存对齐填补上的大小。
   - 支持虚函数而产生的大小。
+  - 继承。
